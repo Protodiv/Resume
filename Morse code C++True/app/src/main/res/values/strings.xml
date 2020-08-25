@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Morse code C++</string>
+    <string name="Language_to_Trans">Morse code</string>
+    <string name="Messag_to_write">Write here please</string>
+    <string name="Translate">Translate</string>
+    <string name="Switch">Switch</string>
+    <string name="Language_for_Trans">English</string>
+</resources>
