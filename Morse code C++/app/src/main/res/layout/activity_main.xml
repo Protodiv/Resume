@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_block"
+
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_Translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="48dp"
+        android:textColor="@drawable/button_translate"
+        android:background="@drawable/button_translate"
+        android:onClick="Push_Translete"
+        android:text="@string/Translate"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/button_Switch_Tr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_translate"
+        android:onClick="switch_metod"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/Switch"
+        android:textColor="@drawable/button_translate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView_Transleted_Text"
+        android:layout_width="198dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="107dp"
+        android:hint="@string/Language_to_Trans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="152dp"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/Messag_to_write"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView_Transleted_Text"
+        app:layout_constraintEnd_toStartOf="@+id/button_Translate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_Language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/Language_for_Trans"
+        android:textSize="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textView_Language2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="11dp"
+        android:text="@string/Language_to_Trans"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_Language"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_Transleted_Text"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        android:textColor="@android:color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Азбука Морзе С++</string>
+    <string name="Language_for_Trans">Англійська</string>
+    <string name="Language_to_Trans">Азбука Морзе</string>
+    <string name="Messag_to_write">Вставте повідомлення</string>
+    <string name="Switch">Перемикач</string>
+    <string name="Translate">Переклад</string>
+</resources>
